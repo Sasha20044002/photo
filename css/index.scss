@@ -5,9 +5,11 @@ $c1: #fff;
 $c2: #000;
 //fonts
 $PO: 'Poiret One';
+$OS: 'Open Sans';
 
 // import
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
 //mixin
 @mixin txt ($color, $line-height, $font-size, $font-weight, $font-family) {
@@ -15,10 +17,126 @@ $PO: 'Poiret One';
     line-height: $line-height;
     font-size: $font-size;
     font-weight: $font-weight;
-    font-family: $font-family;
+    font-family: $font-family, sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
+}
+
+.header {
+    background: url(../img/back.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 809px;
+    position: relative;
+
+    &-info {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+
+    .logo-img {
+        margin: 0 27.5% 0 7%;
+    }
+
+    &-nav {
+        .list {
+            list-style-type: none;
+            width: 401px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                .link {
+                    @include txt(#fff, 22px, 16px, normal, $OS);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-content {
+        height: 729px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 0 0 6.527%;
+
+        .title {
+            @include txt(#fff, 70px, 60px, normal, $PO);
+            display: block;
+            margin: 0 0 20px 0;
+        }
+
+        .text {
+            @include txt(#fff, 33px, 24px, normal, $OS);
+            display: block;
+            margin: 0 0 125px 0;
+        }
+
+        .btn {
+            @include txt(#fff, 33px, 24px, normal, $OS);
+            text-decoration: none;
+            width: 194px;
+            margin: 0 0 0 79px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 340px;
+                height: 78px;
+                border: 2px solid #fff;
+                border-radius: 8px;
+                position: absolute;
+                top: -23px;
+                right: -73px;
+            }
+
+            &::after {
+                content: '';
+                width: 340px;
+                height: 78px;
+                border: 2px solid #fff;
+                border-radius: 8px;
+                position: absolute;
+                top: -13px;
+                right: -83px;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 229px;
+        right: 12.4305%;
+
+        .line {
+            height: 90px;
+            width: 0.5px;
+            background-color: white;
+
+            &:first-child {
+                margin: 0 0 30px 0;
+            }
+
+            &:last-child {
+                margin: 15px 0 0 0;
+            }
+        }
+
+        &-link {
+            @include txt(#fff, 22px, 16px, normal, $OS);
+            text-decoration: none;
+            margin: 0 0 15px 0;
+        }
+    }
 }
