@@ -9,6 +9,7 @@
   background: url(../img/back.png) no-repeat center center;
   background-size: cover;
   height: 809px;
+  margin: 0 0 60px 0;
   position: relative;
 }
 
@@ -154,5 +155,62 @@
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   margin: 0 0 15px 0;
+}
+
+.main .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .portfolio .title {
+  width: 100%;
+  color: #424242;
+  line-height: 42px;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: "Poiret One", sans-serif;
+  text-align: center;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.main .portfolio .title::before, .main .portfolio .title::after {
+  content: '';
+  width: 44%;
+  height: 0px;
+  border: 1px solid #FFBD81;
+}
+
+.main .portfolio .title::before {
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+
+.main .portfolio .title::after {
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+
+.main .portfolio .photos {
+  width: 1290px;
+}
+
+.main .portfolio .photos img:not(:nth-child(3)),
+.main .portfolio .photos img:not(:nth-child(6)) {
+  margin-right: 20px;
+}
+
+.main .portfolio .photos img:not(:nth-child(4)),
+.main .portfolio .photos img:not(:nth-child(5)),
+.main .portfolio .photos img:not(:nth-child(6)) {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
