@@ -349,4 +349,49 @@ $OS: 'Open Sans';
             margin: 0 19px;
         }
     }
+
+    .about-me {
+        .title {
+            display: block;
+            width: $w;
+            @include txt($c1, 42px, 32px, normal, $PO);
+            text-align: center;
+            margin: 0 0 40px 0;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 44%;
+                height: 0px;
+                border: 1px solid $c2;
+            }
+
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 21px;
+            }
+
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 21px;
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 100px 0;
+
+            &-text {
+                width: 560px;
+                @include txt(#000, 157.19%, 16px, normal, $OS);
+                text-align: left;
+                margin: 0 25px 0 0;
+            }
+        }
+    }
 }

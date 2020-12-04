@@ -407,4 +407,60 @@
 .main .price .between {
   margin: 0 19px;
 }
+
+.main .about-me .title {
+  display: block;
+  width: 100%;
+  color: #424242;
+  line-height: 42px;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: "Poiret One", sans-serif;
+  text-align: center;
+  margin: 0 0 40px 0;
+  position: relative;
+}
+
+.main .about-me .title::before, .main .about-me .title::after {
+  content: '';
+  width: 44%;
+  height: 0px;
+  border: 1px solid #FFBD81;
+}
+
+.main .about-me .title::before {
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+
+.main .about-me .title::after {
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+
+.main .about-me .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 100px 0;
+}
+
+.main .about-me .content-text {
+  width: 560px;
+  color: #000;
+  line-height: 157.19%;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  margin: 0 25px 0 0;
+}
 /*# sourceMappingURL=index.css.map */
