@@ -764,4 +764,26 @@
 .main .contacts .social .mb {
   margin: 0;
 }
+
+.footer {
+  background-color: #FFBD81;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .text {
+  color: #424242;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
 /*# sourceMappingURL=index.css.map */

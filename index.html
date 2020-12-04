@@ -11,22 +11,22 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="general">
         <div class="header-info">
             <img src="img/logo.svg" alt="logo" class="logo-img">
             <nav class="header-nav">
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="link">Портфолио</a>
+                        <a href="#port" class="link">Портфолио</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">Цены</a>
+                        <a href="#prc" class="link">Цены</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">Обо мне</a>
+                        <a href="#abme" class="link">Обо мне</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">Контакты</a>
+                        <a href="#soc" class="link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="portfolio">
+        <section class="portfolio" id="port">
             <span class="title">Портфолио</span>
             <div class="photos">
                 <img src="img/img1.png" alt="photo" class="photo1 bottom">
@@ -57,7 +57,7 @@
             </div>
             <a href="#" class="btn">Больше фото</a>
         </section>
-        <section class="price">
+        <section class="price" id="prc">
             <span class="title">Цены</span>
             <div class="block">
                 <span class="block-title">Лайт</span><span class="price">100$</span>
@@ -94,7 +94,7 @@
                 <a href="#" class="btn">Заказать</a>
             </div>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="abme">
             <span class="title">Обо мне</span>
             <article class="content">
                 <p class="content-text">
@@ -112,7 +112,7 @@
                 <img src="img/photo.png" alt="photo" width="655" height="419" class="content-img">
             </article>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="soc">
             <span class="title">Обо мне</span>
             <div class="left">
                 <div class="block-contact">
@@ -151,16 +151,18 @@
             </form>
             <div class="social">
                 <hr class="line1">
-                <a href="#" class="social-link">Главная</a>
-                <a href="#" class="social-link">Портфолио</a>
-                <a href="#" class="social-link">Цены</a>
-                <a href="#" class="social-link">Обо мне</a>
-                <a href="#" class="social-link mb">Контакты</a>
+                <a href="#general" class="social-link">Главная</a>
+                <a href="#port" class="social-link">Портфолио</a>
+                <a href="#prc" class="social-link">Цены</a>
+                <a href="#abme" class="social-link">Обо мне</a>
+                <a href="#soc" class="social-link mb">Контакты</a>
                 <hr class="line2">
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <span class="text">&copy; 2020 | Фотограф Дмитрий Головач | Москва</span>
+    </footer>
 </body>
 
 </html>
